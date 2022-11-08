@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+main{
+    background: url(img/spaceBc.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стиль Солнца */
+.sun{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sun:hover {
+    opacity: 0.7;
+}
+
+.boxSun:hover .modalSun{
+    display: block;
+    position: absolute;
+}
+
+
+.boxSun:hover .modalSun{
+    display: block;
+    position: absolute;
+}
+.modalSun{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+.modalImgSun{
+    display: block;
+    width: 35%;
+    max-width: 700px;
+    position:absolute;
+}
+
+
+
+#dataNameSun{
+    position: absolute;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 15%;
+}
+
+#dataSun{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    word-break: break-all;
+}
+
+
+.closeSun{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeSun:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Меркурия */
+
+.mercury{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mercury:hover{
+    opacity: 0.7;
+}
+
+.modalMercury{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgMercury{
+    display: block;
+    width: 30%;
+    max-width: 700px;
+    
+}
+
+#dataNameMercury{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 13%;
+    margin-top: 10px;
+}
+
+#dataMercury{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeMercury{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeMercury:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Венеры */
+
+.venus{
+    position: absolute;
+    left: 35%;
+    top: 19%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.venus:hover{
+    opacity: 0.7;
+}
+
+.modalVenus{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgVenus{
+    display: block;
+    width: 30%;
+    max-width: 700px;   
+}
+
+#dataNameVenus{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 13%;
+    margin-top: 10px;
+}
+
+#dataVenus{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeVenus{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeVenus:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Земли */
+
+.earth{
+    position: absolute;
+    left: 45%;
+    top: 18%;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.earth:hover{
+    opacity: 0.7;
+}
+
+.modalEarth{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgEarth{
+    display: block;
+    width: 30%;
+    max-width: 700px;   
+}
+
+#dataNameEarth{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 13%;
+    margin-top: 10px;
+}
+
+#dataEarth{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeEarth{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeEarth:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Марса */
+
+.mars{
+    position: absolute;
+    left: 58%;
+    top: 18%;
+    height: 87px;
+    width: 87px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.mars:hover{
+    opacity: 0.7;
+}
+
+.modalMars{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgMars{
+    display: block;
+    width: 30%;
+    max-width: 700px;   
+}
+
+#dataNameMars{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 13%;
+    margin-top: 10px;
+}
+
+#dataMars{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeMars{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeMars:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Юпитера */
+
+.jupiter{
+    position: absolute;
+    left: 74%;
+    top: 12%;
+    height: 175px;
+    width: 175px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jupiter:hover{
+    opacity: 0.7;
+}
+
+.modalJupiter{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgJupiter{
+    display: block;
+    width: 30%;
+    max-width: 700px;   
+}
+
+#dataNameJupiter{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 13%;
+    margin-top: 10px;
+}
+
+#dataJupiter{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeJupiter{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeJupiter:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Сатурна */
+
+.saturn{
+    position: absolute;
+    left: 17%;
+    top: 48%;
+    height: 159px;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.saturn:hover{
+    opacity: 0.7;
+}
+
+.modalSaturn{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.modalImgSaturn{
+    display: block;
+    width: 35%;
+    margin-top: 5%;
+    max-width: 700px;   
+}
+
+#dataNameSaturn{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 15%;
+    margin-top: 10px;
+}
+
+#dataSaturn{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeSaturn{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeSaturn:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Урана */
+
+.uranus{
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.uranus:hover{
+    opacity: 0.7;
+}
+
+.modalUranus{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modalImgUranus{
+    display: block;
+    width: 30%;
+    margin-top: 5%;
+    max-width: 700px;   
+    margin-left: 15px;
+}
+
+#dataNameUranus{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 14%;
+    margin-top: 10px;
+}
+
+#dataUranus{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeUranus{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeUranus:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль Нептуна */
+
+.neptune{
+    position: absolute;
+    left: 70%;
+    top: 48%;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.neptune:hover{
+    opacity: 0.7;
+}
+
+.modalNeptune{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modalImgNeptune{
+    display: block;
+    width: 30%;
+    margin-top: 5%;
+    max-width: 700px;   
+    margin-left: 15px;
+}
+
+#dataNameNeptune{
+    position: relative;
+    display: block;
+    width: 10%;
+    color: white;
+    height: 150px;
+    left: 14%;
+    margin-top: 10px;
+}
+
+#dataNeptune{
+    margin: auto;
+    display: block;
+    width: 35%;
+    color: white;
+    height: 150px; 
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    word-break: break-all;
+}
+
+.closeNeptune{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeNeptune:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

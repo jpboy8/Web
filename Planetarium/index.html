@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="boxSun">
+            <img src="img/Sun.png" class="sun" id="sun">
+            <div id="modalSun" class="modalSun">
+                <span class="closeSun" onclick="document.getElementById('modalSun').style.display='none'">&times;</span>
+                <img class="modalImgSun" id="imgSun" src="img/Sun.png">
+                <div id="dataNameSun">Sun</div>
+                <div id="dataSun">The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet light, and infrared radiation. It is by far the most important source of energy for life on Earth. Its diameter is about 1.39 million kilometers (864,000 miles), or 109 times that of Earth. Its mass is about 330,000 times that of Earth, and it accounts for about 99.86% of the total mass of the Solar System.Roughly three quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon and iron.</div>
+            </div>
+        </div>
+
+        <div class="boxMercury">
+            <img src="img/Mercury.png" class="mercury" id="mercury">
+            <div id="modalMercury" class="modalMercury">
+                <span class="closeMercury" onclick="document.getElementById('modalMercury').style.display='none'">&times;</span>
+                <img class="modalImgMercury" id="imgMercury">
+                <div id="dataNameMercury"></div>
+                <div id="dataMercury"></div>
+            </div>
+        </div>
+
+        <div class="boxVenus">
+            <img src="img/Venus.png" class="venus" id="venus">
+            <div id="modalVenus" class="modalVenus">
+                <span class="closeVenus" onclick="document.getElementById('modalVenus').style.display='none'">&times;</span>
+                <img class="modalImgVenus" id="imgVenus">
+                <div id="dataNameVenus"></div>
+                <div id="dataVenus"></div>
+            </div>
+        </div>
+
+        <div class="boxEarth">
+            <img src="img/Earth.png" class="earth" id="earth">
+            <div id="modalEarth" class="modalEarth">
+                <span class="closeEarth" onclick="document.getElementById('modalEarth').style.display='none'">&times;</span>
+                <img class="modalImgEarth" id="imgEarth">
+                <div id="dataNameEarth"></div>
+                <div id="dataEarth"></div>
+            </div>
+        </div>
+
+        <div class="boxMars">
+            <img src="img/Mars.png" class="mars" id="mars">
+            <div id="modalMars" class="modalMars">
+                <span class="closeMars" onclick="document.getElementById('modalMars').style.display='none'">&times;</span>
+                <img class="modalImgMars" id="imgMars">
+                <div id="dataNameMars"></div>
+                <div id="dataMars"></div>
+            </div>
+        </div>
+
+        <div class="boxJupiter">
+            <img src="img/Jupiter.png" class="jupiter" id="jupiter">
+            <div class="modalJupiter" id="modalJupiter">
+                <span class="closeJupiter" onclick="document.getElementById('modalJupiter').style.display='none'" >&times;</span>
+                <img class="modalImgJupiter" id="imgJupiter">
+                <div id="dataNameJupiter"></div>
+                <div id="dataJupiter"></div>
+            </div>
+        </div>
+
+        <div class="boxSaturn">
+            <img src="img/Saturn.png" class="saturn" id="saturn">
+            <div class="modalSaturn" id="modalSaturn">
+                <span class="closeSaturn" onclick="document.getElementById('modalSaturn').style.display='none'">&times;</span>
+                <img class="modalImgSaturn" id="imgSaturn">
+                <div id="dataNameSaturn"></div>
+                <div id="dataSaturn"></div>
+            </div>
+        </div>
+
+        <div class="boxUranus">
+            <img src="img/Uranus.png" class="uranus" id="uranus">
+            <div class="modalUranus" id="modalUranus">
+                <span class="closeUranus" onclick="document.getElementById('modalUranus').style.display='none'">&times;</span>
+                <img class="modalImgUranus" id="imgUranus">
+                <div id="dataNameUranus"></div>
+                <div id="dataUranus"></div>
+            </div>
+        </div>
+
+        <div class="boxNeptune">
+            <img src="img/Neptune.png" class="neptune" id="neptune">
+            <div class="modalNeptune" id="modalNeptune">
+                <span class="closeNeptune" onclick="document.getElementById('modalNeptune').style.display='none'">&times;</span>
+                <img class="modalImgNeptune" id="imgNeptune">
+                <div id="dataNameNeptune"></div>
+                <div id="dataNeptune"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
